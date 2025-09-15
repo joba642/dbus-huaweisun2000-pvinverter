@@ -1,13 +1,13 @@
 # dbus-huaweisun2000-pvinverter
 
-dbus driver for victron cerbo gx / venus os for huawei sun 2000 inverter
+dbus driver for victron cerbo gx / venus os >3.5 for huawei sun 2000 inverter
 
 ## Purpose
 
-This script is intended to help integrate a Huawei Sun 2000 inverter into the Venus OS and thus also into the VRM
+This script is intended to help integrate a Huawei Sun 2000 inverter into the Venus OS > 3.5 into the v2 GUI and thus also into the VRM
 portal.
 
-I use a Cerbo GX, which I have integrated via Ethernet in the house network. I used the WiFi of the device to connect to
+I use a Cerbo GX, which I have integrated via Ethernet in the house network. I used the LAN of the device to connect to
 the internal WiFi of the Huawei Sun 2000. Attention: No extra dongle is necessary! You can use the integrated Wifi,
 which is actually intended for configuration with the Huawei app (Fusion App or Sun2000 App). The advantage is that no
 additional hardware needs to be purchased and the inverter does not need to be connected to the Internet.
@@ -16,15 +16,9 @@ To further use the data, the mqtt broker from Venus OS can be used.
 
 ## Todo
 
-- [ ] better logging
-- [x] find out why the most values are missing in the view
-- [x] repair modelname (custom name in config)
-- [x] possibility to change settings via gui
-- [ ] alarm, state
-- [ ] more values: temperature, efficiency
-- [ ] clean code
+- [ ] get code running with configurable IP, Port, modbus-id
+- [x] find out why the m
 
-Cooming soon
 
 ## Installation
 
@@ -127,3 +121,7 @@ https://github.com/RalfZim/venus.dbus-fronius-smartmeter
 https://github.com/fabian-lauer/dbus-shelly-3em-smartmeter.git
 
 https://github.com/victronenergy/velib_python.git
+
+https://github.com/ricpax/dbus-huaweisun2000-pvinverter
+
+https://github.com/kcbam/dbus-huaweisun2000-pvinverter
